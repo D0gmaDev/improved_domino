@@ -117,7 +117,7 @@ class Game:
 
 
 def generate_new_game(n: int, p: int) -> Game:
-    assert p * 6 <= n * (n - 1) / 2
+    assert p * 6 < n * (n - 1) / 2
 
     game = Game(n, p)
 
